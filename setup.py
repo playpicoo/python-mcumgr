@@ -32,7 +32,7 @@ setuptools.setup(
         "cbor",
         "crcmod",
         # for serial/nlip transport
-        "serial",
+        "pyserial",
         # for BLE transport
         "bleak > 0.5.1",
     ],
