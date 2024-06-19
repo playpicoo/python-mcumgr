@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lohmega-python-mcumgr", # TODO username
+    name="picoo-python-mcumgr", # TODO username
     version=VERSION,
     author="Lohmega",
     author_email="info@lohmega.com",
@@ -21,7 +21,7 @@ setuptools.setup(
     description="Library and command line tool for mcumgr protocol(s)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/lohmega/python-mcumgr",
+    url="https://github.com/playpicoo/python-mcumgr",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

@@ -248,11 +248,11 @@ class SMPClientNlip:
 
         nlip = NlipPkt()
         while ser.is_open:
-            line = ser.readline()
-            rxline = bytearray(line)
-            logger.debug("RX: %s", rxline.hex())
-            msg = None
             try:
+                line = ser.readline()
+                rxline = bytearray(line)
+                logger.debug("RX: %s", rxline.hex())
+                msg = None
                 pkt = nlip.parse_line(rxline)
                 if pkt is not None:
                     msg = smp.MgmtMsg.from_bytes(pkt)
